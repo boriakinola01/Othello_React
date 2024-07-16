@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 import Board from './Components/Board/Board';
-import 
+import StartPage from './Components/StartPage/StartPage';
 
 function App() {
 
@@ -15,11 +15,9 @@ function App() {
 
   return (
     <div className="App">
-      gameStarted ? (
-
-      ) : (
-        
-      )
+      {
+        gameStarted ? <Board /> : <StartPage onStartGame={handleStartGame}/>
+      }
     </div>
   );
 }
