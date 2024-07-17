@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import './StartPage.css';
 
 export default function StartPage({ onStartGame }) {
 
@@ -15,9 +16,10 @@ export default function StartPage({ onStartGame }) {
   return (
     <div className='Start_page'>
       
-      <h1>Enter Player Names</h1>
+      <h1>Othello</h1>
 
       <form>
+        <div>
         <div>
             <label htmlFor=""> Player 1:</label>
             <input type="text" onChange={(e) => {setPlayer1(e.target.value)}} value={player1} required/>
@@ -26,6 +28,8 @@ export default function StartPage({ onStartGame }) {
             <label htmlFor=""> Player 2:</label>
             <input type="text" onChange={(e) => {setPlayer2(e.target.value)}} value={player2} required/>
         </div>
+        </div>
+        
         <button type='submit' onClick={ handleSubmit } >Start Game</button>
       </form>
 
