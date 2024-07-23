@@ -1,13 +1,3 @@
-.Start_page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: #1a1a2e; /* Dark background */
-    color: #fbbbad; /* Light pink text */
-  }
-  
   h1 {
     font-size: 2em;
     margin-bottom: 2rem;
@@ -18,8 +8,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 50%;
   }
-  
+
   form > div {
     display: flex;
     flex-direction: column;
@@ -29,7 +20,10 @@
   
   label {
     font-size: 1.2em;
-    margin-bottom: 0.5rem;
+    margin-right: auto;
+    margin-bottom: 10%;
+    max-width: fit-content;
+    display: block;
   }
   
   input {
@@ -40,6 +34,10 @@
     background-color: #2e2e42; /* Slightly lighter background for input */
     color: #fbbbad; /* Light pink text */
     outline: none;
+    display: block;
+    max-width: fit-content;
+    margin-top: 30%;
+    display: block;
   }
   
   input:focus {
@@ -47,7 +45,7 @@
   }
   
   button {
-    margin-top: 1rem;
+    margin-top: 30%;
     padding: 0.75rem 1.5rem;
     font-size: 1em;
     color: #1a1a2e; /* Dark text on button */
@@ -60,4 +58,38 @@
   button:hover {
     background-color: #f48c8c; /* Slightly darker pink for hover */
   }
+
+  .Start_page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #1a1a2e; /* Dark background */
+    color: #fbbbad; /* Light pink text */
+  }
+
+  .player1_avi, .player2_avi {
+    width: 100%;
+    height: 300%;
+    background-color: red;
+  }
+
+  .spacer {
+    display: block;
+    height: 40%;
+    width: max-content;
+  }
+
+  .player_tile {
+    height: 50px;
+    display: block;
+  }
+
+  .player_sections {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20%;
+  }
+  
   

@@ -19,24 +19,23 @@ export default function StartPage({ onStartGame }) {
       <h1>Othello</h1>
 
       <form>
-        <div>
-        <div>
+        <div className='player_sections'>
+        <div className='player_tile'>
             <label htmlFor=""> Player 1:</label>
+            <div className='player2_avi'></div>
             <input type="text" onChange={(e) => {setPlayer1(e.target.value)}} value={player1} required/>
         </div>
-        <div>
+        
+        <div className='player_tile'>
             <label htmlFor=""> Player 2:</label>
+            <div className='player1_avi'></div>
             <input type="text" onChange={(e) => {setPlayer2(e.target.value)}} value={player2} required/>
         </div>
         </div>
-        
+        <div className='spacer'></div>
         <button type='submit' onClick={ handleSubmit } >Start Game</button>
       </form>
 
-      <div>
-      <h1>Player 1: {player1}</h1>
-      <h1>Player 2: {player2}</h1>
-      </div>
     </div>
   )
 }
